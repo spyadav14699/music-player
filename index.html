@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="data">
+        <audio src="https://www.dropbox.com/s/3mjzj73400sxovk/perfect.mp3?raw=1"></audio>
+        <audio src="https://www.dropbox.com/s/yo5tcfdjoz95ozf/7-rings.mp3?raw=1"></audio>
+        <audio src="https://www.dropbox.com/s/zp1xfir101y4sc3/happier.mp3?raw=1"></audio>
+        <audio src="https://www.dropbox.com/s/umam9olakop001d/stay.mp3?raw=1"></audio>
+        <audio src="https://www.dropbox.com/s/yi1cpg16snrl3fc/girls-like-you.mp3?raw=1"></audio>
+        <img src="https://www.dropbox.com/s/crlthbozdznb13g/perfect.jpeg?raw=1" />
+        <img src="https://www.dropbox.com/s/gobvfxj4r0t053v/7-rings.jpg?raw=1" />
+        <img src="https://www.dropbox.com/s/xxmwcz14hkn7iwl/happier.png?raw=1" />
+        <img src="https://www.dropbox.com/s/kierj5lzst1yx9n/stay.jpg?raw=1" />
+        <img src="https://www.dropbox.com/s/ouq5zzgbqsk9zx0/girls-like-you.png?raw=1" />
+    </div>
+    <div id="loader"></div>
+    <div id="wrapper">
+        <div class="music-player">
+            <button id="playlist">
+                <i class="fa-solid fa-angle-down"></i>
+            </button>
+            <img id="song-image" />
+            <div class="song-details">
+                <p id="song-name"></p>
+                <p id="song-artist"></p>
+            </div>
+            <div class="player-options">
+                <button id="shuffle">
+                    <i class="fa-solid fa-shuffle"></i>
+                </button>
+                <button id="prev">
+                    <i class="fa-solid fa-backward-step"></i>
+                </button>
+                <button id="play">
+                    <i class="fa-solid fa-play"></i>
+                </button>
+                <button id="pause" class="hide">
+                    <i class="fa-solid fa-pause"></i>
+                </button>
+                <button id="next">
+                    <i class="fa-solid fa-forward-step"></i>
+                </button>
+                <button id="repeat">
+                    <i class="fa-solid fa-repeat"></i>
+                </button>
+            </div>
+            <audio id="audio" preload="metadata"></audio>
+            <div id="progress-bar">
+                <div id="current-progress"></div>
+            </div>
+            <div class="time-container">
+                <span id="current-time">0:00</span>
+                <span id="max-duration">0:00</span>
+            </div>
+            <div id="playlist-container" class="hide">
+                <button id="close-button"><i class="fa-solid fa-xmark"></i></button>
+                <ul id="playlist-songs"></ul>
+            </div>
+        </div>
+        <a href="https://youtu.be/-mw_XRTPftk" target="_blank">Watch Me Code &nbsp;<i class="fab fa-youtube"></i></a>
+    </div>
+</body>
+</html>
+<script src="./index.js"></script>
